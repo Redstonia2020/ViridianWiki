@@ -1,4 +1,8 @@
-﻿body {
+﻿html, body {
+    height: 100%;
+}
+
+body {
     margin: 0;
 }
 
@@ -9,9 +13,33 @@ header {
 }
 
 main {
-    padding: 1em;
+    margin: 1em;
 }
+
+aside {
+    float: right;
+    width: 20vw;
+    height: 70%;
+    margin: 1em;
+    padding: 1em;
+    background-color: #eeeeee;
+}
+
+    aside iframe {
+        border: none;
+        height: 100%
+    }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0082ff;
+}
+
+ul.undecorated {
+    list-style-type: none;
+    padding-left: 0;
 }
