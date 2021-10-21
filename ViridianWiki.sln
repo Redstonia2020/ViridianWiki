@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "docs", "ViridianWiki\docs.vbproj", "{D5C7A808-899D-4AD3-8D37-6A1C7100B23E}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "docs", "docs\docs.vbproj", "{891571AF-B8C6-4A9D-BCB2-E7D37CF45F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5C7A808-899D-4AD3-8D37-6A1C7100B23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5C7A808-899D-4AD3-8D37-6A1C7100B23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5C7A808-899D-4AD3-8D37-6A1C7100B23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5C7A808-899D-4AD3-8D37-6A1C7100B23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891571AF-B8C6-4A9D-BCB2-E7D37CF45F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891571AF-B8C6-4A9D-BCB2-E7D37CF45F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891571AF-B8C6-4A9D-BCB2-E7D37CF45F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891571AF-B8C6-4A9D-BCB2-E7D37CF45F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
