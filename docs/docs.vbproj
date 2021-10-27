@@ -95,6 +95,8 @@
     <Content Include="defaultstyles.css" />
     <Content Include="menu.html" />
     <Content Include="index.html" />
+    <Content Include="menu.css" />
+    <Content Include="menu.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
