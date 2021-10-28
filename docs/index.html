@@ -4,7 +4,13 @@
     <meta charset="utf-8" />
     <title>Home | Viridian Wiki</title>
     <link rel="stylesheet" type="text/css" href="defaultstyles.css" />
-    <script src="menu.js"></script>
+    <script>
+        function loadmenu() {
+            sidebar = document.getElementById("menu");
+            content = sidebar.getElementsByTagName("iframe")[0];
+            sidebar.innerHTML = content.contentDocument.body.innerHTML;
+        }
+    </script>
 </head>
 <body>
     <header>
