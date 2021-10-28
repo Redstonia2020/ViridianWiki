@@ -1,10 +1,8 @@
 ﻿var sidebar;
 var content;
 
-window.onload = function () {
+function loadmenu() {
     sidebar = document.getElementById("menu");
     content = sidebar.getElementsByTagName("iframe")[0];
-    content.contentDocument.onload = function () {
-        sidebar.innerHTML = content.document.innerHTML;
-    }
+    sidebar.innerHTML = content.document.innerHTML;
 }
