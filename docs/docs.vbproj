@@ -93,6 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="defaultstyles.css" />
+    <Content Include="pages\Viridian.txt" />
+    <Content Include="wikipage.js" />
+    <Content Include="page.html" />
     <Content Include="Viridian.html" />
     <Content Include="menu.html" />
     <Content Include="index.html" />
@@ -146,6 +149,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
