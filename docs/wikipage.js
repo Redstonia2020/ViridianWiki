@@ -10,9 +10,8 @@ window.onload = function () {
 }
 
 function loadpage() {
-    var data;
     loadfile().then((value) => {
-        data = value;
+        document.getElementById("content").innerHTML = value;
     });
 }
 
