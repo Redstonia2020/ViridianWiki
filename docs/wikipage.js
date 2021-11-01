@@ -7,6 +7,7 @@ window.onload = function () {
     pagename = pageurl.replace("_", " ");
     document.title = pagename + " " + document.title;
     document.getElementById("title").innerHTML = pagename;
+    loadpage();
 }
 
 function loadpage() {
