@@ -96,7 +96,6 @@
     <Content Include="pages\Viridian.txt" />
     <Content Include="wikipage.js" />
     <Content Include="page.html" />
-    <Content Include="Viridian.html" />
     <Content Include="menu.html" />
     <Content Include="index.html" />
     <Content Include="menu.js" />

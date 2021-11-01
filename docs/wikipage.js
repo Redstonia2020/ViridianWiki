@@ -11,8 +11,13 @@ window.onload = function () {
 }
 
 function loadpage() {
-    loadfile().then((value) => {
+    var file = loadfile();
+    file.then((value) => {
         document.getElementById("content").innerHTML = value;
+    });
+
+    file.catch(function () {
+        alert("uh oh, something went wrong, we're very sorry")
     });
 }
 
