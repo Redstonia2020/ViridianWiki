@@ -10,7 +10,10 @@ window.onload = function () {
 }
 
 function loadpage() {
-    loadfile()
+    var data;
+    loadfile().then((value) => {
+        data = value;
+    });
 }
 
 async function loadfile() {
