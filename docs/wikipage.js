@@ -12,13 +12,15 @@ window.onload = function () {
 
 function loadpage() {
     var file = loadfile();
-    file.then((value) => {
-        document.getElementById("content").innerHTML = value;
+    var thing;
+    file.then(value => {
+        thing = document.getElementById("content").innerHTML = value;
     });
 
     file.catch(function () {
         alert("uh oh, something went wrong, we're very sorry")
     });
+    return thing;
 }
 
 async function loadfile() {
