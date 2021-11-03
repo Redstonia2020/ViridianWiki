@@ -12,16 +12,22 @@ window.onload = function () {
 
 function loadpage() {
     var file = loadfile();
-    var thing;
     file.then(value => {
-        document.getElementById("content").innerHTML = value;
-        thing = value;
+        //document.getElementById("content").innerHTML = value;
+        var formatted = value.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>");
+
+        var paragrapharray = formatted.split("\n");
+        var paragraphed = "";
+        for (var i = 0; i < paragrapharray.length; i++) {
+            paragraphed += "<p>" + paragrapharray[i] + "</p>\n";
+        }
+
+        document.getElementById("content").innerHTML = formatted;
     });
 
     file.catch(function () {
         alert("uh oh, something went wrong, we're very sorry")
     });
-    return thing;
 }
 
 async function loadfile() {
@@ -29,4 +35,22 @@ async function loadfile() {
     const data = await response.text();
 
     return data;
+}
+
+String.prototype.replacepair = function (search, replace1, replace2) {
+    var result = this;
+    var first = true;
+    while (result.includes(search)) {
+        if (first) {
+            result = result.replace(search, replace1);
+        }
+
+        else {
+            result = result.replace(search, replace2);
+        }
+
+        first = !first;
+    }
+
+    return result;
 }
