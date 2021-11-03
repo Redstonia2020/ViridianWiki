@@ -14,7 +14,8 @@ function loadpage() {
     var file = loadfile();
     var thing;
     file.then(value => {
-        thing = document.getElementById("content").innerHTML = value;
+        document.getElementById("content").innerHTML = value;
+        thing = value;
     });
 
     file.catch(function () {
