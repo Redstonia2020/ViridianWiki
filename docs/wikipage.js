@@ -22,7 +22,7 @@ function loadpage() {
             paragraphed += "<p>" + paragrapharray[i] + "</p>\n";
         }
 
-        document.getElementById("content").innerHTML = formatted;
+        document.getElementById("content").innerHTML = paragraphed;
     });
 
     file.catch(function () {
