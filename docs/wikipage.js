@@ -19,7 +19,21 @@ function loadpage() {
         var paragrapharray = formatted.split("\n");
         var paragraphed = "";
         for (var i = 0; i < paragrapharray.length; i++) {
-            paragraphed += "<p>" + paragrapharray[i] + "</p>\n";
+            var line = paragrapharray[i];
+            var headerType = 0;
+
+            while (line[0] == '#') {
+                headerType++;
+                line = line.replace("#", "");
+            }
+
+            if (headerType == 0) {
+                paragraphed += "<p>" + line + "</p>\n";
+            }
+
+            else {
+                paragraphed += "<h" + headerType + ">" + line + "</h" + headerType + ">\n";
+            }
         }
 
         document.getElementById("content").innerHTML = paragraphed;
