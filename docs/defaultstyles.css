@@ -20,8 +20,6 @@ aside {
     float: right;
     width: 20vw;
     margin: 1em;
-    padding: 1em;
-    background-color: #eeeeee;
 }
 
 
@@ -29,6 +27,12 @@ aside {
         margin: 0;
         list-style-type: none;
         padding-left: 0;
+    }
+
+    aside section {
+        padding: 1em;
+        margin: 1em;
+        background-color: #eeeeee;
     }
 
 h1, h2, h3, h4, h5, h6 {

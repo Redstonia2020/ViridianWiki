@@ -32,6 +32,7 @@ function loadpage() {
             }
 
             else {
+                headerType += 1;
                 paragraphed += "<h" + headerType + ">" + line + "</h" + headerType + ">\n";
             }
         }
