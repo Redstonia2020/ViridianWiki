@@ -21,8 +21,10 @@ function loadpage() {
             var infolines = info.split("\n");
             var htmlInfoResult = "";
             for (var i = 0; i < infolines.length; i++) {
-                htmlInfoResult += infolines[i] + "<br>"
+                htmlInfoResult += infolines[i] + "<br>";
             }
+
+            htmlInfoResult = htmlInfoResult.substring(0, htmlInfoResult.lastIndexOf("<br>"));
 
             var infoObject = document.getElementById("info");
             infoObject.innerHTML = htmlInfoResult;
