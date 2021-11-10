@@ -29,6 +29,10 @@ aside {
         padding-left: 0;
     }
 
+    aside ul ul {
+        padding-left: 40px;
+    }
+
     aside section {
         padding: 1em;
         margin: 1em;
