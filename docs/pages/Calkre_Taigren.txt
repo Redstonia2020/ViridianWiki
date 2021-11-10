@@ -16,7 +16,7 @@ Parties/Gatherings
 Water
 Void
 Rabbits
-
+#endinfo
 Calkré Taigren is a human female raised in the Library of Arithia. Raised to collect knowledge, Calkré spent most of her time in an enclosed study, making her face very pale and vulnerable to sunlight. Since the age of six, she has been studying the elementals of the world, but was always disallowed to read the chapter about the Void.
 #History?
 At the age of 16, Calkré had a vision of a purple jewel. After her parents went to sleep, she curiously followed the brightening presence of the jewel. This led Calkré to their bedroom, where a headdress with the jewel embed was found. After taking the headdress, Calkré’s parents caught her and decided to banish her from the village. She ran through the local swamp and eventually fainted. A witch found her and decided to give a potion to manipulate Calkré to free the Void. This led her on a 3-year mission to fulfill her purpose, travelling all over the world.

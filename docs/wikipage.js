@@ -14,7 +14,28 @@ function loadpage() {
     var file = loadfile();
     file.then(value => {
         //document.getElementById("content").innerHTML = value;
-        var formatted = value.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>");
+        if (value.includes("#endinfo")) {
+            var infosplit = value.split("#endinfo");
+
+            var info = infosplit[0];
+            var infolines = info.split("\n");
+            var htmlInfoResult = "";
+            for (var i = 0; i < infolines.length; i++) {
+                htmlInfoResult += infolines[i] + "<br>"
+            }
+
+            var infoObject = document.getElementById("info");
+            infoObject.innerHTML = htmlInfoResult;
+            infoObject.hidden = false;
+
+            var cutout = infosplit[1];
+        }
+
+        else {
+            var cutout = value;
+        }
+
+        var formatted = cutout.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>");
 
         var paragrapharray = formatted.split("\n");
         var paragraphed = "";
