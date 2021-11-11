@@ -93,7 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="defaultstyles.css" />
+    <Content Include="pages\Port_Troutland.txt" />
+    <Content Include="pages\Davenfield.txt" />
+    <Content Include="pages\New_Bark.txt" />
     <Content Include="pages\Calkre_Taigren.txt" />
+    <Content Include="pages\Arithia.txt" />
+    <Content Include="pages\Plainsville.txt" />
     <Content Include="pages\Rondoria.txt" />
     <Content Include="pages\Viridian.txt" />
     <Content Include="wikipage.js" />
