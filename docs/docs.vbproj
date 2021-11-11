@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="defaultstyles.css" />
     <Content Include="pages\Calkre_Taigren.txt" />
+    <Content Include="pages\Rondoria.txt" />
     <Content Include="pages\Viridian.txt" />
     <Content Include="wikipage.js" />
     <Content Include="page.html" />
