@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="defaultstyles.css" />
+    <Content Include="pages\Villager_Rights_Season_5.txt" />
+    <Content Include="pages\Villager_Rights_Season_4.txt" />
     <Content Include="pages\Port_Troutland.txt" />
     <Content Include="pages\Davenfield.txt" />
     <Content Include="pages\New_Bark.txt" />
