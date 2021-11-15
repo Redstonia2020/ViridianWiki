@@ -121,5 +121,5 @@ String.prototype.linkify = function (bracket1, bracket2) {
         result = result.replace(bracket1 + link + bracket2, "<a href=\"" + "page.html?" + link.replaceAll(" ", "_") + "\">" + link + "</a>");
     }
 
-    console.log(result);
+    return result;
 }
