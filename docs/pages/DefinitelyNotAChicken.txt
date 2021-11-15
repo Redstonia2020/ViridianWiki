@@ -22,11 +22,9 @@ Griefing
 Cheating
 #endinfo
 DefinitelyNotAChicken is the leader of the village Mount Rondoria and an active server member. She originally joined in late Season 4 and has made a complete appearance in Season 5. Being one of the youngest and one of the only Australian members, Chicken has had to deal with bad ping, causing several lag-related deaths.
-
-Mount Rondoria 
+#Mount Rondoria 
 Chicken began her base in a small mountainside. Over time, while rehabilitating and nursing zombie villagers, she turned a mountain into a village. For more, see Mount Rondoria.
-
-Shops
+#Shops
 Chicken is a successful shop owner, and has the oldest shop still running today. Here is a list of her shops:
 - The Love Garden
 - Villager Curing Tools Shop [Discontinued]
@@ -34,28 +32,20 @@ Chicken is a successful shop owner, and has the oldest shop still running today.
 - Chicken's Sushi
 - Adosadle
 - The Magickal Sea
-
-Viridian Politics
-
-1st Mayoral Election
+#Involvement in Viridian Politics
+##1st Mayoral Election
 During the 1st Mayoral Election against Erik and Mastable, Chicken was a strong supporter of Mastable. Her vote went on his side. Mastable was elected the first Mayor of Viridian, which was called Spawntown at the time.
-
-2nd Mayoral Election
+##2nd Mayoral Election
 Chicken was, originally jokinglly, one of the three candidates of the 2nd Mayoral election. Mastable would run again and Maduch would join the Race. Mastable won, with Chicken gathering 0 votes. "I'm not brave enough for politics"
-3rd Mayoral Election
+##3rd Mayoral Election
 Mastable's terms had ended, and a new mayor was in order. The Mayoral Race was a difficult choice, as it was between Maduch and Tim, both very good candidates and accosiates with Chicken. She ended up voting for Tim, tying the original score. After some days, the unbalacned results were in and Tim was to be the next mayor.
-
-Arithia-Viridian War
+#Arithia-Viridian War
 Chicken is currently remaining neutral in the war, although any change could cause her to pick a side.
-
-Void Event
+#Void Event
 Chicken was always changing sides in the event, very much a difficult side-picker.
-
-Chicken's Adventures
+#Chicken's Adventures
 Chicken has completed all advancements except for "How Did We Get Here", using the /me command to fool people into thinking she completed it. Chicken first had her eyes set on "A Balanced Diet" and "Adventuring Time", eventually completing both. She enjoys the challenge of collecting the items required to complete the advancement list.
-
-The Ender Dragon
+#The Ender Dragon
 Before her first fight, Chicken never had a problem with the Ender Dragon, or "Jean". Everything changed when she chose to fight her and consequently lost her favourite trident, "Void Destroyer". After months of fighting the Ender Dragon over and over, Chicken finally forgave Jean for her "Crimes" and warned her of the incoming doom of the Viridian and Arithian armies.
-
-Villagers
+#Villagers
 Chicken has cured many villagers over the course of Season 5. A famous example includes the armourer Sal R. Junior and his brother, Kal S. She has good relationships with the Rondorian village and the other villages, saving them from raids multiple times, earning the "Hero of the Village" Rank. 
