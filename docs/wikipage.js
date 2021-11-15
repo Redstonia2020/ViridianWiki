@@ -41,9 +41,25 @@ function loadpage() {
 
         var paragrapharray = formatted.split("\n");
         var paragraphed = "";
+        var ulist = false;
         for (var i = 0; i < paragrapharray.length; i++) {
             var line = paragrapharray[i];
             var headerType = 0;
+
+            if (line[0] == '-') {
+                if (!ulist) {
+                    ulist = true;
+                    paragraphed += "<ul>";
+                }
+
+                line = line.replace("-", "");
+                line = "<li>" + line + "</li>";
+            }
+
+            else if (!(line[0] == '-') && ulist) {
+                ulist = false;
+                paragraphed += "</ul>"
+            }
 
             while (line[0] == '#') {
                 headerType++;
