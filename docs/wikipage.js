@@ -4,7 +4,7 @@ var pageurl;
 
 window.onload = function () {
     pageurl = search.substring(1);
-    pagename = pageurl.replace("_", " ");
+    pagename = pageurl.replaceAll("_", " ");
     document.title = pagename + " " + document.title;
     document.getElementById("title").innerHTML = pagename;
     loadpage();
