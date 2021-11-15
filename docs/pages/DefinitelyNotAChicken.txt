@@ -21,13 +21,13 @@ Combat
 Griefing 
 Cheating
 #endinfo
-DefinitelyNotAChicken is the leader of the village Mount Rondoria and an active server member. She originally joined in late Season 4 and has made a complete appearance in Season 5. Being one of the youngest and one of the only Australian members, Chicken has had to deal with bad ping, causing several lag-related deaths.
+_DefinitelyNotAChicken_ is the leader of the village Mount Rondoria and an active server member. She originally joined in late Season 4 and has made a complete appearance in Season 5. Being one of the youngest and one of the only Australian members, Chicken has had to deal with bad ping, causing several lag-related deaths.
 #Mount Rondoria 
-Chicken began her base in a small mountainside. Over time, while rehabilitating and nursing zombie villagers, she turned a mountain into a village. For more, see Mount Rondoria.
+Chicken began her base in a small mountainside. Over time, while rehabilitating and nursing zombie villagers, she turned a mountain into a village. For more, see [[Mount Rondoria]].
 #Shops
 Chicken is a successful shop owner, and has the oldest shop still running today. Here is a list of her shops:
 -The Love Garden
--Villager Curing Tools Shop [Discontinued]
+-Villager Curing Tools Shop (discontinued)
 -C418 and Lena's Specialties
 -Chicken's Sushi
 -Adosadle

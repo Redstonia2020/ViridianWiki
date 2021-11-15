@@ -4,7 +4,7 @@ var pageurl;
 
 window.onload = function () {
     pageurl = search.substring(1);
-    pagename = pageurl.replaceAll("_", " ");
+    pagename = pageurl.replaceAll("__", "/underscore/").replaceAll("_", " ").replaceAll("/underscore/", "_");
     document.title = pagename + " " + document.title;
     document.getElementById("title").innerHTML = pagename;
     loadpage();
@@ -58,7 +58,7 @@ function loadpage() {
 
             else if (!(line[0] == '-') && ulist) {
                 ulist = false;
-                paragraphed += "</ul>"
+                paragraphed += "</ul>";
             }
 
             while (line[0] == '#') {
@@ -107,4 +107,16 @@ String.prototype.replacepair = function (search, replace1, replace2) {
     }
 
     return result;
+}
+
+String.prototype.linkify = function (bracket1, bracket2) {
+    var result = this;
+    var start;
+    var end;
+    while (result.includes(bracket1) && result.includes(bracket2)) {
+        start = result.indexOf(bracket1);
+        end = result.indexOf(bracket2);
+    }
+
+    console.log(start + " " + end + " " + this.substring(start, end));
 }
