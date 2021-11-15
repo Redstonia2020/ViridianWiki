@@ -37,7 +37,7 @@ function loadpage() {
             var cutout = value;
         }
 
-        var formatted = cutout.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>");
+        var formatted = cutout.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>").linkify("[[", "]]");
 
         var paragrapharray = formatted.split("\n");
         var paragraphed = "";
@@ -113,10 +113,13 @@ String.prototype.linkify = function (bracket1, bracket2) {
     var result = this;
     var start;
     var end;
+    var link;
     while (result.includes(bracket1) && result.includes(bracket2)) {
         start = result.indexOf(bracket1);
         end = result.indexOf(bracket2);
+        link = result.substring(start + bracket1.length, end);
+        result = result.replace(bracket1 + link + bracket2, "<a href=\"" + "page.html?" + link.replaceAll(" ", "_") + "\">" + link + "</a>");
     }
 
-    console.log(start + " " + end + " " + this.substring(start, end));
+    console.log(result);
 }
