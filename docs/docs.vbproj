@@ -103,6 +103,7 @@
     <Content Include="pages\Plainsville.txt" />
     <Content Include="pages\Rondoria.txt" />
     <Content Include="pages\Vernon.txt" />
+    <Content Include="pages\DefinitelyNotAChicken.txt" />
     <Content Include="pages\Viridian.txt" />
     <Content Include="wikipage.js" />
     <Content Include="page.html" />
