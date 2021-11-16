@@ -37,7 +37,7 @@ function loadpage() {
             var cutout = value;
         }
 
-        var formatted = cutout.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>").linkify("[[", "]]");
+        var formatted = cutout.replacepair("**", "<b>", "</b>").replacepair("__", "<u>", "</u>").replacepair("*", "<i>", "</i>").replacepair("_", "<i>", "</i>").replacepair("--", "<strike>", "</strike>").linkify();
 
         var paragrapharray = formatted.split("\n");
         var paragraphed = "";
@@ -109,16 +109,22 @@ String.prototype.replacepair = function (search, replace1, replace2) {
     return result;
 }
 
-String.prototype.linkify = function (bracket1, bracket2) {
+String.prototype.linkify = function () {
     var result = this;
     var start;
     var end;
     var link;
-    while (result.includes(bracket1) && result.includes(bracket2)) {
-        start = result.indexOf(bracket1);
-        end = result.indexOf(bracket2);
-        link = result.substring(start + bracket1.length, end);
-        result = result.replace(bracket1 + link + bracket2, "<a href=\"" + "page.html?" + link.replaceAll(" ", "_") + "\">" + link + "</a>");
+    var destination;
+    while (result.includes("[") && result.includes("](") && result.includes(")")) {
+        start = result.indexOf("[");
+        end = result.indexOf("](");
+        link = result.substring(start + 1, end);
+
+        start = end;
+        end = result.indexOf(")");
+        destination = result.substring(start + 2, end);
+
+        result = result.replace("[" + link + "](" + destination + ")", "<a href=\"" + "page.html?" + destination + "\">" + link + "</a>");
     }
 
     return result;
