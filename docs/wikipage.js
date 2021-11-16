@@ -45,8 +45,10 @@ function loadpage() {
         for (var i = 0; i < paragrapharray.length; i++) {
             var line = paragrapharray[i];
             var headerType = 0;
+            var islistitem = false;
 
             if (line[0] == '-') {
+                islistitem = true;
                 if (!ulist) {
                     ulist = true;
                     paragraphed += "<ul>";
@@ -66,13 +68,17 @@ function loadpage() {
                 line = line.replace("#", "");
             }
 
-            if (headerType == 0) {
+            if (headerType > 0) {
+                headerType += 1;
+                paragraphed += "<h" + headerType + ">" + line + "</h" + headerType + ">\n";
+            }
+
+            else if (!islistitem) {
                 paragraphed += "<p>" + line + "</p>\n";
             }
 
             else {
-                headerType += 1;
-                paragraphed += "<h" + headerType + ">" + line + "</h" + headerType + ">\n";
+                paragraphed += line;
             }
         }
 
